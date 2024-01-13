@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Rainy Days</title>
+    <meta name="description" content="Review your cart before checking out"/>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+      </style>
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+      </style>
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- Hotjar Tracking Code for https://aurora-hagen-javascript1.netlify.app/ -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:3784651,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    </head>
+<body>
+    <header>
+        <input type="checkbox" id="nav-box">
+        <label for="nav-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAA
+            CXBIWXMAAAsTAAALEwEAmpwYAAAAOUlEQVR4nO3VsQkAMAwDQe0/VrzQb5BMkMLgkOYPVBsEwomkaUAB+3Hq1+E13ph05ZykMfid
+            JKXnAFL2T3AnCaPBAAAAAElFTkSuQmCC" class="hamburger-nav"></label>
+        <nav>
+            <ul class="menu">
+                <a href=index.html><img src="images/logo_blue_background.JPG" alt="Rainy Days logo" class="logo"width="200"/> </a>
+                <li><a class="hnavtxt" href=listjackets.html>Women</a></li>
+                <li><a class="hnavtxt" href=listjackets.html>Men</a></li>
+                <li><a class="hnavtxt" href=about.html>About</a></li>
+                <li><a class="hnavtxt" href=contact.html>Contact</a></li>
+                <a href="checkout.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAABgUlEQVR4nO2Wu0oDQRhGR1kLEW0ljWBrsNNUFin0CSS9IEZQsDGohcHYGbAVFHyCiK2tFl46EYv4AFqnUCsVjwys8LOaZXZmsmskHwxbfYfDXHZGqV66McAOP9ME+rISqvJ7ilkJbbcRamQiFJHLk04egHFTqYuUpNZMhUopyHwAE6ZCAfAkyiWjYjyzH7gVzKOkgJoon3sQWhS8FyCXFJAD3gRk0kFmEHgUrKotqCEgBw5Ccrb1VhiyBRUj0zxiwRgFngVnwUpGAO8FbMWifyz6d3pzuwqt2t5v+lgD76I/5ySjAwxHpnwf2DQcN6J3pnwFOMT9J5j3JROEa2+bT2Ddi4wOUBHwV6AO7BmOLWBK+QowFkp8p+INbilUFzJ62YKshU6E0GmC0xU3ZlyENvCfmnK8FK//jJAOMADMA7sJTlfcmFX/KkABuAqPv/4W0ujGPdJakT3QMnntuXTjoMttNma5k904aLkNdKmT3e5ZMrExL8MnrP5OqxS6vXRNvgAkTBi5tMT85QAAAABJRU5ErkJggg==" alt="Cart icon" class="iconsnav"/></a>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAACzklEQVR4nO2XzW+NQRTGb3rrpritCktVNmrBhqWyYEFuYsFthI1ICVHbkqqNkBtJS0LxH0jVovGV2KlEFH8CK65WcsvKwkct/OQkZ9qTyftO534lIn2SSd6ceea8zzvnzJnzZjLL+N8BZIE9wA3gDTAH/NYxp7brwG7hNlPISmAI+EI8ROAFWdtoMUeAWWrHJ6CvEUJagGsJLygDY8B+oAdYraNHbbdVhMUfoCQ+6xHzwHM6A/TH5Ibm2smEnZ2oSVTCzjwE8gm8bqCoozthvh147Pkq1ZIzFjf9rwLWAPc1FDYs4zKXsNu3PF6xmtM06+1Mi8fJAW9Jhxz9XIIou1OSY20xgoa8nMkncM55Ap7rsBhICd9nwzkfk4i2zvSn8F4YzkVjHzb2qZS1pwynEjwgWoHt0c6m8N4b3jZj327s7wIfLTvv0BsSJNeBw1iAZ3do2Ngv2TAG1t8xvNGQIElGhwMB3oCXL1M6LM4G1hcMbzokyObPlgAv54n38do/Zd56qegOlZCgeUNsTyUu1qHxhDp0z69DKafN4VesoKgbGugCDuvoilyzKlaQDdmGTJMAbIwNmc2LQhMFHTTveRUiSqfnMJLC6QCO6f32UmvKDx0zapO5o8JN8TG61HscUdpOB7nPFgojsE/vop/EQ7iPgL3GT6t3fewKCcpq2+lwHFgHTFI/JtXXCe/qCPdG2gPbXfrgOf4OPAHOADuA9frVrfq8U+eeKtfio7c7g0Expv3w20/BN+Ay0Lmkk0VfnbpG1vooR7Uf6qjPK3hfgU2xQhL8bVYfDuL7ULVOpCG3eAasrUFMhzZ5Fleq9eM6vAnPkeTUacmXiPUrNJdszqBtb11/HiUvfGi9uau39lb9Bcrrc0HnbM/jwnS1ZjGesGJKoseiXHXORIhqkx5Ya0cshDsYfZrqCGOvlv9pfem8joraRqQCNyQ8y/jX8RdMc5NGnE5WzwAAAABJRU5ErkJggg==" alt="User icon" class="iconsnav"/>
+            </ul>
+        </nav>
+    </header>
+    <main class="jacket-main">
+        <h1>Review your cart</h1>
+        <div class="cart-content">
+            <div class="cart-img">
+                <img src="images/RainyDays_Jacket7.jpg" alt="Picture of jacket">
+            </div>
+            <div class="cart-text">
+            <h3>Rainy Days VitaForce Jacket</h3>
+            <p>Size: M</p>
+            <p>Colour: Green</p>
+            <p>Qnt: 1</p>
+            <p>Price: 124,99$</p>
+            <h3>Total: 124,99$</h3>
+            <a href="checkout.html">
+            <button class="button-jacket-page">Checkout now</button>
+            </a>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <div>
+            <br> <a  href=contact.html class="footertxt">Helpcenter</a><br><br>
+            <a href=contact.html class="footerlink" >Contact us</a><br><br>
+            <a  href=contact.html class="footerlink">Terms & conditions</a><br><br>
+            <a  href=contact.html class="footerlink">Shipping</a><br><br>
+            <a  href=contact.html class="footerlink">Returns</a><br><br>
+            <a  href=contact.html class="footerlink">Payment</a><br>
+        </div>
+        <div>
+            <br><a  href=about.html class="footertxt">About</a><br><br>
+            <a href=about.html class="footerlink" >Our story</a><br><br>
+            <a  href=about.html class="footerlink">Store locator</a><br><br>
+            <a  href=about.html class="footerlink">Join our team</a><br><br>
+            <a  href=about.html class="footerlink">Cookie Policy</a><br>
+        </div>
+        <div>
+            <h6 class="footertxt">Safe payments</h6><br>
+            <img src="images/american-express-curved-32px.png" alt="American Express logo"/>
+            <img src="images/mastercard-curved-32px.png" alt="Mastercard logo"/><br>
+            <img src="images/paypal-curved-32px.png" alt="PayPal logo"/>
+            <img src="images/visa-curved-32px.png" alt="Visa logo"/><br>
+            <br><br><h6 class="footertxt">Follow us</h6>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4ElEQVR4nN1VTUtcQRBUg16S/A/Rq5CAoEJCjqIxEXLKTdFoknuukojHXHOM8eo/EYxojB83YVmWnarZFZOTE2rpgWGZeb7N0QcDj9fdVd013f2Ghu71E0IYI7kMYA/AKclrHb0D+CGbfP4LHMBLkpckQ9UBcAFgcZCsR0juJCCH3vv3nU5notFoPNRpt9uTzrkPJH8mftuKvZMgggP4S3K1KsiSWTPfHkkdWXrgzrnZnE+r1XrsvX9C8gXJKYubiyQAFqouNGq+WkhgiWQ3kcUlla8bwXkIYTQnzXLUPCdLs9l8RLKTgF+RPEgSfEDyyEhe5bLbk1EXmsvee/806ZytQoUfzb6bM/6WUd2SCyb5OhI452ZyPuouIzjNAfS0lRQFgjeRQNWUGsB8ukUC9XlfZV8rhuykQOCrJBqvS0ByP/WVvEWJbLco6F1f0DTJFZLfksy/6JtsfSpsmv17VZsehRCGB72DEMIIgONim2rQtLgMZH1QApIbBn6WHTSTadFAbgA8q0tA8jmAPwBunXPzWfDEeTuSKKsoV45ANg2mwC37z5XgyYaMJEG62mr+lAzaW00tgF/mcyvwWus6kWtBi6vGD+fsTlkqqhlVR2i3WLYaxq4GTK0oW/FC783zD0gjWdTBUXAMAAAAAElFTkSuQmCC">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAACTklEQVR4nOWUTYhOYRTHL9OQj2HnK5SyIB9JGh8bmRCKopSVYqEprKSUbFiKJQsWGhsfmY2E1JBkJ6IoysfLeI177/P/Pe99JZFHR+87vWO8984YVv6bW+eec/7nOef8TxT9t+jt7R0PrAN2eO9XhRBamjoDc51zq4eSOIQwStIBSR8kXQPOALclvQA2ZFk2FdgHvATW/gySdAHInHNbigiA40BPtVqd3mhP03QB8ETSe+Ax8CpJkpl1gljSUklPJe3KSd4u6Xm5XJ7Q5HWjvfebACR9NRIztpjBHKrV6jRJ9yRd7WdvgKRTQGeUA2C7pNPWEe/98nrgszRNZ9WrAPbUenxRUkcIYWwtuMdekUdQqVTmA+8GzBQ4bL1tdEySZJKk3cBdSV+Ah5I+SlqTRyBpm6Tz/YYQwhhJNyR9a9b/Uqk0TtISe75zbnJBizqBk40EoyV9Bs4C3baG0Qgg6Zikg78arzvndkZ/AcCdQZoyJQJv4zieMZLkcRy3SUpCCK2Dflr/gTf2bbbnRQD2DhhwI7z3GyV9Bz4BR6JhIoTQasJK03Thbx36+vommsy99yujPwBwCLic62SiMhLb5eFsE9BuM7RDV+jsnFss6SZQktRV5F+pVOYBr4H1hcmtau/9CuCcVVR0XeuVS9qa59QN3JJ031bMvsD+vE2K47gNOFFrZ0du1XZbgAeSyqbAPC045xZJOmrHzJSfZdmUaCionQsbcJcF2803dQOXgCu1Ex4Dj4xA0pwhJc6pdLap2zm32YYHLLO2jCjpv8IPhFdj16v6eagAAAAASUVORK5CYII=">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB4ElEQVR4nN2VT6iNQRiHL4qS2PpzbXRXIsq/nSQrUkqU2JCklGKj5IqNbLChrFBiYUGRlchCV3EX7FCXlFNO5/u+55nTR0qMpkbd1Dn3nuMsZOptvt755n1m5p3fO0ND/2WLMc4ErqgjZVmuUC8NHAI8Uw+rJ4CHAweoo+o19W4I4SiwH7hZVdX2oiiWqOerqlqQ+rquF/UDWK++Uj+qW4CfwHG1DiFsUGNZlktTX1XVqn7z8Fl9D2wGvhVFMZwCAjv+GpB3cU+9HkLYpn5ttVqLU0B1z0AAwC3gsroG+FFV1coccGMGjQwEEGOco75WG2lXKblAqT5Kvr4Bf7aiKOb//o4xzo4xzug1wDDwQJ3o0+6nK9wRANzOZ9vNSFe203g61o4AdTz/9DIlNlkS1uQAzWZzXoJ0WcD4dADf1cftdns50FS/JIElLWTAp+yLebzuCZAnvsjX8gJwMISwLxXABMhCW6c+AVary9RqkIC3jUZjrnoaOANsAp4PDKBOxBhnpUqrrlUPAW/6AgBXgZ0hhK2TAHfqul6oXlSPqHuBd1MCgLFJyfoAnE3VFDiQS8ZT4Fj238hqTm/GaColeWFj3XZwaho6iFPYyY6AJH11N3AuPSS9WJ6zq+fy8c+3XwhFxIAKs292AAAAAElFTkSuQmCC">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAACb0lEQVR4nN1VPYxMURReu5aIn0IhIToKQUMiiMLfZqOzWYstNCISy4ZQC4UG6ydRaRRCVAoFnVojkfiLYWgGGZP33nzffTOsFcmVI99NbmbfzlvKfclN7jn3nPOd+51zz+vpmdOf934BycMAHgCokGzbsr3pSB4ym/8KDuAAyU8kfbcF4COA4X/Juo/ktSjIq2azeSbLsg31en2xLdubjuTryG7Ce99bChCCA/hJcqybk5I5BWBKIFdnQ8vf4AB2C3A5yQsAnpN0OvtA8kaapqvltyeAABjqVtDA+QnTOee2AvgmXY3kI5JPAaTS2TeoRMYFUC0svHVL4NxoSZJkFYAEwCSAo977eR3JXJS9ddYa0fVGuoNF9FjbeSueAG8qo+MmZ1m2keRAh889Bbwj+ax87hcBvLfDPM/XS64a55YZgE2BY+fctuDTbDZ3CuBzlIQBVIooyu0wSZKlArBiPtP+UtSOWyKftQo4ZbL5yiafEaBWqy2S/MVupf15OX733i+Mbr1L+q+lABFF6yTfFiXbnXNHlOnjjqQC8MNSikKRSZ40ud1urwRQB3AMwC2dXQ/2rVZrhZ1LP1haZBtcMn4ZXq+1qh7aCzk2SI5qAFZkf9ds1QxvZTcyDcB62waXnMaCPk3TZQB+qyZPomL/IHnZez/f7Jxzp6OH1j8NQFcclpE9rr262b44U+M5z/MdodtkMwDgl97R/sLgkfFENOzGAZwTwGjBrfss8xCc5JWuweXUa1MxmveT1ucANlsLNxqNJXYLAw6ch+CzGtcRXUN6zWU/nGopLV1u02+Dy9oOwDuSLVu2l25kxoLOme8PA5DnuzviM3UAAAAASUVORK5CYII=">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABCUlEQVR4nO1UQQ6CQAzcb6hPUr8jcNb4KzDR+BoInVUunjDFJYG1dle4MkkPLO1OO1MwZsEU1HW9B3AB0ABoA8E5hbV2F3U5EZ0jLm2lIKJTTOec+CKiQ1mW61BDnAMg4RquVSdxsnA3SdS4ppv4DuAGIHW1uUbw5CS/83rsyUhzd/nVTcIED42g0zLWE/I0l+pVAskTTfO/CTRPJM2nEDz5uWmalZ/LZ77mkwlKYV2rqtq4fDuHoHBnqZCbzZaIDexNZhKexHWeDUzeTiZg8Coqa3oM1fsEoub2M0nu3nPkw849T9QP7afmIUiefEHS3ASgeSJC0xzh3/XIk9AkveZtIERPFphYvAE8APr0VM7LMAAAAABJRU5ErkJggg==">
+        </div>
+</footer>
+</body>
+</html>

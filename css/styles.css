@@ -1,0 +1,462 @@
+/**Global styles**/
+
+
+@font-face {
+    font-family:'Lora', Georgia, 'Times New Roman', Times, serif;
+    src: url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+}
+@font-face {
+    font-family: 'Istok Web', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+}
+
+nav, #nav-box {
+    display: none;
+}
+
+#nav-box:checked ~ nav {
+    display: block;
+}
+
+@media (min-width: 600px) {
+    nav {
+        display: inline;
+    }
+    .hamburger-nav{
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+
+    
+    .hnavtxt{
+        display: block;
+    }
+
+}
+
+.menu{
+    margin: 0;
+    padding: 8px;
+    height: 100%;
+}
+
+.menu li {
+    display: inline;
+}
+
+li, h1, h2, .specialtxt {
+    font-family: 'Lora', serif;
+}
+
+h3, h5, p, label, legend, .subscribefield {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 16px;
+}
+h3, h5 {
+    font-size: 19px;
+}
+h6 {
+    font-size: 1rem;
+}
+
+/**Footer **/
+
+footer {
+    background-color: #2F4475; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    margin-top: auto;
+    padding-bottom: 15px;
+}
+
+footer div {
+    padding-left: 8px;
+}
+
+.footerlink {
+    text-decoration: none;
+    color: white;
+    font-family: 'Istok Web', sans-serif;
+    margin: 15px;
+}
+
+.footertxt {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lora', serif;
+    margin: 10px;
+    font-weight: bold;
+}
+footer img {
+    padding-left: 10px;
+}
+
+body {
+    background-color: #F2F3F0;
+    margin: 0px;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*display: grid;
+    grid-template-rows: auto 1fr auto;*/
+}
+
+main, .aboutmain {
+    max-width: 1400px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+/** Index page**/
+
+.hero-text-section {
+    background-image: url(../images/wilfried-santer-5gDsYLQTpq8-unsplash\ \(1\).jpg);
+    min-height: 500px;
+    background-size: cover;
+    display: grid;
+    align-items: end;
+    grid-template-columns: repeat(auto-fit, minmax(370px,1fr));
+    text-decoration: none;
+}
+
+.hero-h1 {
+    font-family: 'Lora', serif;
+    font-size: 40px;
+    background-color: #2F4475;
+    color: #f8f7f6;
+    display: inline-block;
+    align-items: end;
+    padding: 0px 5px 10px 5px;
+    width: 330px;
+    text-align: center;
+  }
+
+  .hero-p {
+    font-family: 'Istok Web';
+    background-color: #2F4475;
+    color: rgb(255, 254, 254);
+    padding: 12px;
+    text-align: center;
+    max-width: 400px;
+}
+
+  .hero-button {
+    background-color: #f8f7f6;
+    border-radius: .2rem;
+    display: inline-block;
+    padding: .5rem;
+    border: #2F4475; 
+    max-height: 30px;
+    text-decoration: none;
+    color:#2F4475; 
+    text-align: center;
+  } 
+
+
+
+.jacket-cards {
+    display: flex;
+    border: solid;
+    border-color: #2F4475;
+}
+
+.jacket-cards button {
+    max-height: 50px;
+}
+
+@media (min-width:600px) {
+    .jacket-cards {
+        grid-template-rows: repeat (1,fr);
+        justify-content: space-between;
+    }
+}
+
+@media (max-width:600px) {
+    .jacket-cards {
+        flex-direction: column;
+        text-align: center;
+    }
+    .jacket-cards div img {
+        min-width: 100%;
+        max-height: 450px;
+    }
+}
+
+.jacket-cards div {
+    display: inline;
+}
+
+.inspiration div {
+    display: inline-block;
+    padding-inline: 20px;
+    padding: 10px;
+}
+
+.inspiration div img {
+    border-spacing: 10px;
+}
+
+/**About page **/
+
+.aboutimg {
+    max-width: 100%
+}
+
+.about-grids div{
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.subscribefield {
+    text-align: center;
+}
+
+.subscribe {
+    border: solid;
+    border-color: #2F4475;
+    padding: 20px;
+}
+
+.emailfield {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 16px;
+    width: 80px;
+}
+
+.headerstxt, .aboutsubscribe { 
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 20px;
+    width: 80%;
+}
+
+.navtxt {
+    color: black;
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #2F4475;
+}
+
+.hnavtxt {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 10px;
+    margin: 1.5em;
+}
+
+.form_contact, .form_checkout {
+    display: block;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 16px;
+}
+
+
+.contshp {
+    color: black;
+    text-decoration: underline;
+    size: 16px;
+}
+
+
+ul {
+    padding: 0px;
+}
+
+
+.iconsnav {
+    margin-left: 2.5em;
+    margin-right: 1.5em;
+    margin-top: 5em;
+    padding-left: 15px;
+}
+
+.instapic, .inspiration h3{
+    text-align: center;
+    padding-top: 50px;
+}
+
+.inspiration {
+    display: inline;
+}
+
+.supportform {
+    max-width: 600px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/*Homepage*/
+/*Buttons*/
+.cta-button, .subscribefield, .select-size-jacket-page, .button-jacket-page  {
+    width: 120px;
+    height: 35px;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 16px;
+   
+}
+
+
+
+/*All jackets page*/
+
+@media (min-width: 1400px) {
+    #all-products {
+        display: grid;
+        grid-template-columns: repeat(3,minmax(0, 1fr));
+        grid-gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    .card img {
+        width: 453px;
+        height: 470px;
+    }
+    #single-jacket-content {
+        padding-top: 30px;
+    }
+}
+@media (max-width: 1400px) and (min-width: 700px)  {
+    #all-products {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0, 300px));
+        grid-gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+        .card img {
+            width: 300px;
+            height: 320px;
+        }
+}
+@media (max-width: 700px) {
+    #all-products {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0, 300px));
+        grid-gap: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    .card img {
+        width: 180px;
+        height: 195px;
+    }
+    h1, .sortby {
+        margin-left: 5px;
+    }
+}
+
+
+.single-jacket {
+    padding-top: 20px;
+}
+
+/*.sortby {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column-gap: 10px;
+    padding-top: 20px;
+    max-height: auto;
+    padding-bottom: 20px;
+}
+*/
+.sortby select {
+    height: 40px;
+    width: 160px;
+}
+/**Jacket page**/
+
+#single-jacket-content, .cart-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(360px,1fr));
+    gap: 25px;
+    /*padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;*/
+}
+
+.jacket-main {
+    max-width: 1400px;
+    margin: 20px;
+
+}
+@media (max-width:1000px) {
+    #single-jacket-content {
+        padding-top: 20px;
+    }
+   
+}
+#single-jacket-content a {
+    text-decoration: none;
+    color: black;
+}
+
+#single-jacket-content img, .cart-img img {
+    width: 100%;
+    height: 100%;
+    height: fit-content;
+}
+
+.add-to-cart-button {
+    padding: 10px;
+   }
+
+.add-to-cart {
+    margin-top: 20px;
+   }
+
+.button-jacket-page {
+    width: 150px;
+    text-decoration: none;
+   }
+  
+/*.select-size-jacket-page {
+    width: 150px;
+   }
+*/
+/** Checkout complete **/
+
+.placed-order img {
+    max-width: 100px;
+    max-height: 120px;
+}
+
+.checkout-main {
+    padding-left: 10px;
+}
+
+/** Contact **/
+   
+.send {
+    display: block;
+    margin-top: 10px;
+}
+
+#message {
+    width: 300px;
+    height: 80px;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="email"] {
+    font-size: 16px;
+    font-family: 'Istok Web', sans-serif;
+    width: 250px;
+}
+
+.send {
+    background-color: #b1bedd;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 16px;
+}
+
