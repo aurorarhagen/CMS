@@ -5,7 +5,7 @@ const search = url.search;
 
 const parameter = new URLSearchParams(search); 
 
-const URL ='https://api.noroff.dev/api/v1/rainy-days';
+const URL ='http://rainy-days-cms.local/wp-json/wc/store/products';
 
 const testing_function = async(url) => {
     try {
@@ -37,14 +37,14 @@ function createCard(element) {
     const h3Element = document.createElement('h3');
     const pElement = document.createElement('p');
     const imageElement = document.createElement('img');
-    imageElement.src = element.image;
+    imageElement.src = element.images[0].src;
     divElement.classList.add('card');
     divElement.id = element.id;
     divElement.addEventListener('click', ()=> {
         window.location.href = `./jacket.html?id=${element.id}`
     })
-    h3Element.textContent = element.title; 
-    pElement.textContent = element.price + "$";
+    h3Element.textContent = element.name; 
+    pElement.textContent = element.prices.price/100 + '$';
     divElement.append(imageElement,h3Element,pElement)
     return divElement;
 }
