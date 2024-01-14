@@ -7,7 +7,7 @@ const parameter = new URLSearchParams(search);
 
 async function fetchJacket(id) {
     if (!id) throw new Error('Unable to load product. Please try again later.')
-    const url = `http://rainy-days-cms.local/wp-json/wc/store/products/${id}`; 
+    const url = `https://www.rainy-days-cms.com/wp-json/wc/store/products/${id}`; 
     try {
         const response = await fetch(url);
          if (response.ok) {

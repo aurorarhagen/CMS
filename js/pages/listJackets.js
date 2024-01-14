@@ -5,7 +5,7 @@ const search = url.search;
 
 const parameter = new URLSearchParams(search); 
 
-const URL ='http://rainy-days-cms.local/wp-json/wc/store/products';
+const URL ='https://www.rainy-days-cms.com/wp-json/wc/store/products/';
 
 const testing_function = async(url) => {
     try {
