@@ -6,8 +6,9 @@ This project is the last update to the cross-course project where I created a we
 
 ## Description
 
-This project is built using HTML, CSS and Javascript. It uses WordPress as a headless content management system to create a list of all the products and fetch the correct products from that list.  
- #Requirements  
+This project is built using HTML, CSS and Javascript. It uses WordPress as a headless content management system to create a list of all the products and fetch the correct products from that list.   
+
+##Requirements  
  These where the requirements to recieve a passing grade:  
  **Pages:**
  - Homepage
@@ -16,13 +17,13 @@ This project is built using HTML, CSS and Javascript. It uses WordPress as a hea
  - Page for a single product
  - About page
  - Checkout page
- - Checkout success page
+ - Checkout success page  
 
 **Other requirements**  
 - Use WordPress as a headless CMS
 - Use the WooCommerce plugin to create listings for each product
 - Deply WordPress to a remote dynamic host (I used one.com)
-- Use JavaScript to fetch and render products from the WordPress API
+- Use JavaScript to fetch and render products from the WordPress API  
 
 
 ## Built With
@@ -49,9 +50,9 @@ git clone https://github.com/aurorarhagen/CMS.git
 ## Contact
 
 
-[My GitHub profile]([www.twitter.com](https://github.com/aurorarhagen))
+[My GitHub profile](https://github.com/aurorarhagen)
 
-[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/aurora-r%C3%B8ed-hagen-580519203/)
+[My LinkedIn page](https://www.linkedin.com/in/aurora-r%C3%B8ed-hagen-580519203/)
 
 ## License
 
