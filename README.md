@@ -8,7 +8,7 @@ This project is the last update to the cross-course project where I created a we
 
 This project is built using HTML, CSS and Javascript. It uses WordPress as a headless content management system to create a list of all the products and fetch the correct products from that list.  
  #Requirements  
- These where the requirements to recieve a passing grade: 
+ These where the requirements to recieve a passing grade:  
  **Pages:**
  - Homepage
  - Contact page
@@ -49,9 +49,9 @@ git clone https://github.com/aurorarhagen/CMS.git
 ## Contact
 
 
-[My GitHub profile](www.twitter.com)
+[My GitHub profile]([www.twitter.com](https://github.com/aurorarhagen))
 
-[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/aurora-r%C3%B8ed-hagen-580519203/))
+[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/aurora-r%C3%B8ed-hagen-580519203/)
 
 ## License
 
