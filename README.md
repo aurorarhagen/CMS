@@ -1,31 +1,37 @@
-# Your project title
+# Content Management Systems
 
 ![image](/images/cms_screenshot.jpg)
 
-A simple overview of the use/purpose of the project.
+This project is the last update to the cross-course project where I created a website called Rainy Days that sells clothing. 
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This project is built using HTML, CSS and Javascript. It uses WordPress as a headless content management system to create a list of all the products and fetch the correct products from that list.  
+ #Requirements  
+ These where the requirements to recieve a passing grade: 
+ **Pages:**
+ - Homepage
+ - Contact page
+ - Page listing the products
+ - Page for a single product
+ - About page
+ - Checkout page
+ - Checkout success page
 
-You can add some bullet points if you'd like to:
+**Other requirements**  
+- Use WordPress as a headless CMS
+- Use the WooCommerce plugin to create listings for each product
+- Deply WordPress to a remote dynamic host (I used one.com)
+- Use JavaScript to fetch and render products from the WordPress API
 
-- List item 1
-- List item 2
-- List item 3
 
 ## Built With
-
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
-
+- HTML
+- CSS
+- JavaScript
 ## Getting Started
 
 ### Installing
-
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
