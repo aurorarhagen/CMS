@@ -10,6 +10,7 @@ This project is built using HTML, CSS and Javascript. It uses WordPress as a hea
 
 ## Requirements  
  These where the requirements to recieve a passing grade:  
+ 
  **Pages:**
  - Homepage
  - Contact page
