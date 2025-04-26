@@ -36,41 +36,24 @@ This project is built using HTML, CSS and Javascript. It uses WordPress as a hea
 1. Clone the repo:
 
 ```bash
-[git clone [git@github.com:NoroffFEU/portfolio-1-example.git](https://github.com/aurorarhagen/CMS.git)](https://github.com/aurorarhagen/CMS.git)
+git clone https://github.com/aurorarhagen/CMS.git
 ```
 
-2. Install the dependencies:
+### Running  
 
-```
-npm install
-```
+1. Clone the repo
+2. Run the repo in a code editor
+3. Navigate to the page index.html and right-click to open with Live Server. You will now see the homepage in your default web browser
 
-### Running
-
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
-
-```bash
-npm run start
-```
-
-## Contributing
-
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
 
 ## Contact
 
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
+[My GitHub profile](www.twitter.com)
 
-[My LinkedIn page](www.linkedin.com)
+[My LinkedIn page]([www.linkedin.com](https://www.linkedin.com/in/aurora-r%C3%B8ed-hagen-580519203/))
 
 ## License
 
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
+The images of the jackets are provied by Noroff. All other images are license-free from UnSplash. 
 
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
