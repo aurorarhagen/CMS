@@ -36,7 +36,7 @@ This project is built using HTML, CSS and Javascript. It uses WordPress as a hea
 1. Clone the repo:
 
 ```bash
-git clone [git@github.com:NoroffFEU/portfolio-1-example.git](https://github.com/aurorarhagen/CMS.git)
+[git clone [git@github.com:NoroffFEU/portfolio-1-example.git](https://github.com/aurorarhagen/CMS.git)](https://github.com/aurorarhagen/CMS.git)
 ```
 
 2. Install the dependencies:
