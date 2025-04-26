@@ -8,7 +8,7 @@ This project is the last update to the cross-course project where I created a we
 
 This project is built using HTML, CSS and Javascript. It uses WordPress as a headless content management system to create a list of all the products and fetch the correct products from that list.   
 
-##Requirements  
+## Requirements  
  These where the requirements to recieve a passing grade:  
  **Pages:**
  - Homepage
