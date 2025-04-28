@@ -45,7 +45,10 @@ git clone https://github.com/aurorarhagen/CMS.git
 
 1. Clone the repo
 2. Run the repo in a code editor
-3. Navigate to the page index.html and right-click to open with Live Server. You will now see the homepage in your default web browser
+3. Navigate to the page index.html and right-click to open with Live Server. You will now see the homepage in your default web browser  
+
+## Contributing  
+This is a school project and I am therefore not looking for contributors at the moment.  
 
 
 ## Contact
